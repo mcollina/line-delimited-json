@@ -25,7 +25,6 @@ $ npm install line-delimited-json --save
   function handler(client) {
     var wrappedClient = ldj(client)
     wrappedClient.on('data', function(data) {
-    client.on('data', function(data) {
       console.log('request', data)
       wrappedClient.end({ response: '42' })
     })
