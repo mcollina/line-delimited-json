@@ -1,7 +1,7 @@
 line-delimited-json&nbsp;&nbsp;[![Build Status](https://travis-ci.org/mcollina/line-delimited-json.png)](https://travis-ci.org/mcollina/line-delimited-json)
 =================================================================
 
-Send you JS objects over a string using JSONs delimited by a newline.
+Sends your JS objects over a Duplex Stream using JSONs delimited by a newline.
 
   * <a href="#install">Installation</a>
   * <a href="#example">Example</a>
