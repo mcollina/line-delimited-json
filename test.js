@@ -34,7 +34,6 @@ test('ldj works with net streams', function(t) {
   t.plan(2)
 
   function handler(client) {
-    console.log('connected')
     var wrappedClient = ldj(client)
     wrappedClient.on('data', function(data) {
       t.deepEqual(data, { request: 'message' })
