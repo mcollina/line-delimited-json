@@ -11,6 +11,7 @@ function jsonParse (line)
   } catch (err) {
     rv.err = err 
   }
+  return rv
 }
 
 function lineDelimitedJSON(duplex) {
