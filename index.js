@@ -10,6 +10,7 @@ function jsonParse (line)
     rv = JSON.parse(line)
   } catch (err) {
     rv.err = err 
+    rv.line = line
   }
   return rv
 }
