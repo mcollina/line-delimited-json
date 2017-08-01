@@ -56,3 +56,17 @@ test('ldj works with net streams', function(t) {
     })
   })
 })
+
+test('ldj accepts plain strings / invalid json', function(t) {
+  t.plan(1)
+
+  var binary    = ps()
+    , instance  = ldj(binary)
+    , msg       = 'test'
+
+  instance.on('data', function(chunk) {
+    t.deepEqual(chunk, msg)
+  })
+
+  instance.end(msg)
+})
